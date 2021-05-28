@@ -15,9 +15,4 @@ function buildDataPage() {
         .pipe(dest('docs/'));
 }
 
-function moveMp4() {
-    return src('app/*.mp4')
-        .pipe(dest('docs/'));
-}
-
-exports.default = parallel(copyIndexPage, buildDataPage, moveMp4);
+exports.default = parallel(copyIndexPage, buildDataPage);

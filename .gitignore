@@ -1,3 +1,1 @@
 node_modules/
-# Don't add the mp4 twice, so only upload it from docs, so it can be used in Github Pages
-app/*.mp4
